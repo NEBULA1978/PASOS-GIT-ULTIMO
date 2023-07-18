@@ -33,4 +33,35 @@ Tenia dos HEAD he eliminado con:
  1 file changed, 43 insertions(+)
  create mode 100644 style.css
 
+ ///////////////////////////////////////
+Para subir la rama a github solo me ha subido main:
  
+ git push origin nueva-rama
+
+ git push origin agregar-ejercicio-fibonacci
+
+Enumerando objetos: 30, listo.
+Contando objetos: 100% (30/30), listo.
+Compresión delta usando hasta 4 hilos
+Comprimiendo objetos: 100% (26/26), listo.
+Escribiendo objetos: 100% (26/26), 7.31 KiB | 2.44 MiB/s, listo.
+Total 26 (delta 13), reusados 0 (delta 0), pack-reusados 0
+remote: Resolving deltas: 100% (13/13), done.
+remote: 
+remote: Create a pull request for 'agregar-ejercicio-fibonacci' on GitHub by visiting:
+remote:      https://github.com/NEBULA1978/PASOS-GIT-ULTIMO/pull/new/agregar-ejercicio-fibonacci
+remote: 
+To https://github.com/NEBULA1978/PASOS-GIT-ULTIMO.git
+ * [new branch]      agregar-ejercicio-fibonacci -> agregar-ejercicio-fibonacci 
+ 
+ Despues en github añado las rama.
+
+ ///////////////////////////////////////
+Voy a main como he mergeado en github tego que hacer un pull para descargar cambios:
+
+ git checkout main
+M       pasos-git.txt
+Ya en 'main'
+Tu rama está detrás de 'origin/main' por 15 commits, y puede ser avanzada rápido.
+  (usa "git pull" para actualizar tu rama local)
+
