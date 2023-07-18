@@ -65,6 +65,8 @@ console.log("Es un número palíndromo? " + palindromo("2134321"));`;
                 const isPalindrome = palindromo(inputWord);
 
                 resultMessage.textContent = isPalindrome ? "Es un palíndromo" : "No es un palíndromo";
+
+                palindromeInput.value = ""; // Limpiar el campo de entrada
             });
 
             function palindromo(texto){
