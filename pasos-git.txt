@@ -1,0 +1,36 @@
+commit a90e2f8086db00762805429ccbd0a043f354a26a (HEAD -> main)
+Author: NEBULA1978 <rpascualey@gmail.com>
+Date:   Tue Jul 18 21:09:35 2023 +0200
+
+    Añado imagen y js
+
+commit 7dd6d279ceccce7406e29e9ef8d96314203e7944
+Author: NEBULA1978 <rpascualey@gmail.com>
+:...skipping...
+commit a90e2f8086db00762805429ccbd0a043f354a26a (HEAD -> main)
+Author: NEBULA1978 <rpascualey@gmail.com>
+Date:   Tue Jul 18 21:09:35 2023 +0200
+
+    Añado imagen y js
+
+commit 7dd6d279ceccce7406e29e9ef8d96314203e7944
+Author: NEBULA1978 <rpascualey@gmail.com>
+Date:   Tue Jul 18 21:02:24 2023 +0200
+
+    Añado style.css
+
+commit 44122925708d579521e31b29fde7858180b078d0
+Author: NEBULA1978 <rpascualey@gmail.com>
+Date:   Tue Jul 18 21:01:31 2023 +0200
+
+Tenia dos HEAD he eliminado con:
+ git rebase -i HEAD~2
+ He eliminado: pick 7dd6d279 Añado style.css(pero no queria borrar):
+ Para recuperarlo:
+  git cherry-pick  7dd6d27
+[main e4bc23c] Añado style.css
+ Date: Tue Jul 18 21:02:24 2023 +0200
+ 1 file changed, 43 insertions(+)
+ create mode 100644 style.css
+
+ 
