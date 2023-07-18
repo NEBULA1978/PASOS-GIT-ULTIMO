@@ -67,6 +67,10 @@ console.log("Es un número palíndromo? " + palindromo("2134321"));`;
                 resultMessage.textContent = isPalindrome ? "Es un palíndromo" : "No es un palíndromo";
 
                 palindromeInput.value = ""; // Limpiar el campo de entrada
+
+                setTimeout(() => {
+                    resultMessage.textContent = ""; // Borrar el mensaje de resultado después de 2 segundos
+                }, 2000);
             });
 
             function palindromo(texto){
