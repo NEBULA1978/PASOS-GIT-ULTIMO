@@ -51,8 +51,13 @@ console.log("Es un número palíndromo? " + palindromo("2134321"));`;
             const resultMessage = document.getElementById("resultMessage");
 
             showCodeBtn.addEventListener("click", () => {
-                codeSnippetElement.textContent = codeSnippet;
-                codeSnippetElement.style.display = "block";
+                if (codeSnippetElement.style.display === "none") {
+                    codeSnippetElement.textContent = codeSnippet;
+                    codeSnippetElement.style.display = "block";
+                } else {
+                    codeSnippetElement.textContent = "";
+                    codeSnippetElement.style.display = "none";
+                }
             });
 
             checkBtn.addEventListener("click", () => {
