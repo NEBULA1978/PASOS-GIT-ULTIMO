@@ -65,3 +65,38 @@ Ya en 'main'
 Tu rama está detrás de 'origin/main' por 15 commits, y puede ser avanzada rápido.
   (usa "git pull" para actualizar tu rama local)
 
+
+
+ ///////////////////////////////////////
+
+ ERROR
+
+ next@rases:~/Vídeos/varios anteriores/pasos-git-ultimo$ git push origin main
+To https://github.com/NEBULA1978/PASOS-GIT-ULTIMO.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: falló el empuje de algunas referencias a 'https://github.com/NEBULA1978/PASOS-GIT-ULTIMO.git'
+ayuda: Actualizaciones fueron rechazadas porque la punta de tu rama actual está
+ayuda: detrás de su contraparte remota. Integra los cambios remotos (es decir
+ayuda: 'git pull ...') antes de empujar de nuevo.
+ayuda: Mira 'Note about fast-forwards' en 'git push --help' para más detalles.
+next@rases:~/Vídeos/varios anteriores/pasos-git-ultimo$ git pull
+ayuda: Las ramas se han divergido y hay que especificar cómo reconciliarlas.
+ayuda: Se puede hacerlo ejecutando uno de los comandos siguiente antes del
+ayuda: próximo pull:
+ayuda: 
+ayuda:   git config pull.rebase false  # fusionar
+ayuda:   git config pull.rebase true   # rebasar
+ayuda:   git config pull.ff only       # solo avance rápido
+ayuda: 
+ayuda: Se puede reemplazar "git config" con "git config --global" para aplicar
+ayuda: la preferencia en todos los repositorios. También se puede pasar
+ayuda: --rebase, --no-rebase o --ff-only en el comando para sobrescribir la
+ayuda: configuración por defecto en cada invocación.
+fatal: Necesita especificar cómo reconciliar las ramas divergentes.
+
+ARREGLANDO:
+
+
+ ///////////////////////////////////////
+ ///////////////////////////////////////
+ ///////////////////////////////////////
