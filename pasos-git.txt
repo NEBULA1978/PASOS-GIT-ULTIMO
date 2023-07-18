@@ -33,4 +33,65 @@ Tenia dos HEAD he eliminado con:
  1 file changed, 43 insertions(+)
  create mode 100644 style.css
 
- 
+ /////////////////////////////////////////////
+
+ Ahora tengo bien los HEAD:
+
+ next@rases:~/Vídeos/varios anteriores/pasos-git-ultimo$ git log
+commit e4bc23c0fc94a5d620efcc393c4f49702d143d56 (HEAD -> main)
+Author: NEBULA1978 <rpascualey@gmail.com>
+Date:   Tue Jul 18 21:02:24 2023 +0200
+
+    Añado style.css
+
+commit 03d855f98ffdb72234cc7da5e0172bf362eb16f9
+Author: NEBULA1978 <rpascualey@gmail.com>
+Date:   Tue Jul 18 21:09:35 2023 +0200
+
+    Añado imagen y js
+
+commit 44122925708d579521e31b29fde7858180b078d0
+Author: NEBULA1978 <rpascualey@gmail.com>
+Date:   Tue Jul 18 21:01:31 2023 +0200
+
+///////////////////////////////////
+
+Creo una rama para añadir mas funcionalidades:
+git branch agregar-ejercicio-fibonacci
+
+////////////////////////////////////////
+
+Ver ramas que tengo:
+ git branch
+* agregar-ejercicio-fibonacci
+  main
+  
+////////////////////////////////////////
+Si deseas ver las ramas tanto en tu repositorio local como en el repositorio remoto (por ejemplo, en GitHub), puedes usar el siguiente comando:
+
+git branch -a
+
+
+////////////////////////////////////////
+Para ver los cambios realizados en el archivo index.js, puedes utilizar el siguiente comando:
+
+git diff index.js
+
+////////////////////////////////////////
+
+Si deseas ver los cambios en todos los archivos modificados, puedes utilizar el siguiente comando:
+
+git diff
+
+
+Recuerda que el comando git diff te muestra los cambios que aún no han sido agregados al área de preparación (staging area). 
+
+////////////////////////////////////////
+Si deseas ver los cambios que ya has agregado al área de preparación, puedes usar el siguiente comando:
+git diff --staged
+
+////////////////////////////////////////
+////////////////////////////////////////
+////////////////////////////////////////
+////////////////////////////////////////
+////////////////////////////////////////
