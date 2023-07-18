@@ -96,6 +96,46 @@ fatal: Necesita especificar cómo reconciliar las ramas divergentes.
 
 ARREGLANDO:
 
+next@rases:~/Vídeos/varios anteriores/pasos-git-ultimo$ git merge agregar-ejercicio-fibonacci
+error: Los cambios locales de los siguientes archivos serán sobrescritos al fusionar:
+        pasos-git.txt
+Por favor, confirma tus cambios o aguárdalos antes de fusionar.
+Abortando
+Fusionar con estrategia ort falló.
+
+git add pasos-git.txt
+
+ git commit -m "Resolver conflictos al
+ fusionar agregar-ejercicio-fibonacci"
+[main d8c7204] Resolver conflictos al fusionar agregar-ejercicio-fibonacci
+ 1 file changed, 35 insertions(+)
+
+ next@rases:~/Vídeos/varios anteriores/pasos-git-ultimo$ git status
+En la rama main
+Tu rama y 'origin/main' han divergido,
+y tienen 2 y 15 commits diferentes cada una respectivamente.
+  (usa "git pull" para fusionar la rama remota en la tuya)
+
+nada para hacer commit, el árbol de trabajo está limpio
+next@rases:~/Vídeos/varios anteriores/pasos-git-ultimo$
+
+git pull
+ayuda: Las ramas se han divergido y hay que especificar cómo reconciliarlas.
+ayuda: Se puede hacerlo ejecutando uno de los comandos siguiente antes del
+ayuda: próximo pull:
+ayuda: 
+ayuda:   git config pull.rebase false  # fusionar
+ayuda:   git config pull.rebase true   # rebasar
+ayuda:   git config pull.ff only       # solo avance rápido
+ayuda: 
+ayuda: Se puede reemplazar "git config" con "git config --global" para aplicar
+ayuda: la preferencia en todos los repositorios. También se puede pasar
+ayuda: --rebase, --no-rebase o --ff-only en el comando para sobrescribir la
+ayuda: configuración por defecto en cada invocación.
+fatal: Necesita especificar cómo reconciliar las ramas divergentes.
+next@rases:~/Vídeos/varios anteriores/pasos-git-ultimo$ 
+
+
 
  ///////////////////////////////////////
  ///////////////////////////////////////
