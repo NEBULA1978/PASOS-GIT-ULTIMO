@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contador de coincidencias</title>
+  <style>
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Contador de coincidencias</h2>
+  <form id="coincidencias-form">
+    <label for="frase-input">Frase:</label>
+    <input type="text" id="frase-input" required>
+    <label for="palabra-input">Palabra a buscar:</label>
+    <input type="text" id="palabra-input" required>
+    <button type="button" onclick="buscarCoincidencias()">Buscar</button>
+  </form>
+  <br>
+  <div id="resultado"></div>
+  <br>
+  <button type="button" onclick="mostrarCodigo()">Mostrar Código</button>
+
+  <script>
+    function coincidencias(frase, busqueda) {
+      let texto_limpio = frase.toLowerCase().replace(/[^\w\s]/gi, "");
+      let resultado = 0;
+
+      if (texto_limpio.includes(busqueda)) {
+        let palabras = texto_limpio.split(" ");
+        let mapa = {};
+
+        for (let palabra of palabras) {
+          if (mapa[palabra]) {
+            mapa[palabra]++;
+          } else {
+            mapa[palabra] = 1;
+          }
+        }
+
+        resultado = mapa[busqueda];
+      }
+
+      return resultado;
+    }
+
+    function buscarCoincidencias() {
+      const frase = document.getElementById("frase-input").value;
+      const palabra = document.getElementById("palabra-input").value;
+
+      const resultado = coincidencias(frase, palabra);
+
+      document.getElementById("resultado").textContent = `Número de coincidencias en la frase: ${resultado}`;
+    }
+
+    function mostrarCodigo() {
+      const codigo = `
+function coincidencias(frase, busqueda) {
+  let texto_limpio = frase.toLowerCase().replace(/[^\w\s]/gi, "");
+  let resultado = 0;
+
+  if (texto_limpio.includes(busqueda)) {
+    let palabras = texto_limpio.split(" ");
+    let mapa = {};
+
+    for (let palabra of palabras) {
+      if (mapa[palabra]) {
+        mapa[palabra]++;
+      } else {
+        mapa[palabra] = 1;
+      }
+    }
+
+    resultado = mapa[busqueda];
+  }
+
+  return resultado;
+}
+
+console.log(
+  "Número de coincidencias en la frase:",
+  coincidencias("Esta es mi frase", "es")
+);
+`;
+
+      alert(codigo);
+    }
+  </script>
+</body>
+</html>
