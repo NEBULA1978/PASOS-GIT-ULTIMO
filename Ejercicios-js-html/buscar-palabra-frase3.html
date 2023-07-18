@@ -28,27 +28,28 @@
   <pre id="codigo"></pre>
 
   <script>
-    function coincidencias(frase, busqueda) {
-      let texto_limpio = frase.toLowerCase().replace(/[^ws]/gi, "");
-      let resultado = 0;
+function coincidencias(frase, busqueda) {
+  let texto_limpio = frase.toLowerCase().replace(/[^a-zA-Z0-9áéíóúüñ\s]/gi, "");
+  let resultado = 0;
 
-      if (texto_limpio.includes(busqueda)) {
-        let palabras = texto_limpio.split(" ");
-        let mapa = {};
+  if (texto_limpio.includes(busqueda)) {
+    let palabras = texto_limpio.split(" ");
+    let mapa = {};
 
-        for (let palabra of palabras) {
-          if (mapa[palabra]) {
-            mapa[palabra]++;
-          } else {
-            mapa[palabra] = 1;
-          }
-        }
-
-        resultado = mapa[busqueda];
+    for (let palabra of palabras) {
+      if (mapa[palabra]) {
+        mapa[palabra]++;
+      } else {
+        mapa[palabra] = 1;
       }
-
-      return resultado;
     }
+
+    resultado = mapa[busqueda] || 0;
+  }
+
+  return resultado;
+}
+
 
     function buscarCoincidencias() {
       const frase = document.getElementById("frase-input").value;
